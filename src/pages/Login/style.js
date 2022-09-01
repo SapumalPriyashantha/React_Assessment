@@ -49,8 +49,12 @@ export const styleSheet = {
     },
 
     nav_user_h7 :{
-        width:'140%',
+        width:'130%',
         textAlign: 'center'
+    },
+
+    nav_user_btn :{
+        width:'100%'
     }
 
 }

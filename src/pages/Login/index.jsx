@@ -101,6 +101,13 @@ class Login extends Component {
                                 >
                                      Create New Account?
                                 </Typography>
+                                <Button
+                                    className={classes.nav_user_btn}
+                                    size="large"
+                                    href="signIn"
+                                >
+                                    Click Here
+                                </Button>
                             </div>
                         </div>
                     </div>
