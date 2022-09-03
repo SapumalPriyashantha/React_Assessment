@@ -72,8 +72,8 @@ class Login extends Component {
                                 variant="contained"
                                 size="large"
                                 fullWidth
-                                onClick={() => {
-                                    let login = this.loginCustomer();
+                                onClick={async () => {
+                                    let login = await this.loginCustomer();
                                     if(login){
                                         this.setState({
                                             open: true,
