@@ -1,22 +1,24 @@
 export const styleSheet = {
-    navLinks: {
-        marginLeft: "10px",
-        display: "flex"
+    container : {
+        display : 'flex',
+        flexDirection : 'row',
+        justifyContent : 'space-around',
+        alignItems : 'center',
+        height : '75px',
     },
-    logo: {
-        flexGrow: "1",
-        cursor: "pointer"
+    sub_containers : {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height : '50px',
+        width : '200px',
     },
-    link: {
-        textDecoration: "none",
-        color: "white",
-        fontSize: "20px",
-        marginLeft: "10px",
-        position: "relative",
-        right: "470px",
-        "&:hover": {
-            color: "yellow",
-            borderBottom: "1px solid white",
-        },
+    nav_link : {
+        color : '#fafafa !important',
+        textDecoration : 'none !important',
     },
+    nav_userName : {
+        color : '#010708 !important',
+        textDecoration : 'none !important',
+    }
 }

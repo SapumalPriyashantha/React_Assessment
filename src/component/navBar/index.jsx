@@ -7,8 +7,6 @@ import AppBar from "@mui/material/AppBar";
 import Typography from "@mui/material/Typography";
 import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
-import Tabs from "@mui/material/Tabs";
-import Button from "@mui/material/Button";
 
 class NavBar extends Component{
     constructor(props) {
@@ -20,62 +18,37 @@ class NavBar extends Component{
         return(
             <AppBar position="fixed">
                 <CssBaseline />
-                <Toolbar>
-                    <div className={classes.logo}>
+                <Toolbar className={classes.container}>
+                    <div className={classes.sub_containers}>
                         <Box>
-                            <Link href="/home" style={{color:"white" ,
-                                marginLeft:"15px" ,
-                                textDecoration: "none" ,
-                                fontSize: "30px"}}
-                            >Dashboard</Link>
+                            <Link href="/home" className={classes.nav_link}  style={{fontSize : '25px'}}>
+                                DASHBOARD
+                            </Link>
                         </Box>
                     </div>
-
-                    <div className={classes.navLinks}>
+                    <div className={classes.sub_containers}>
                         <Box>
-                            <Link href="/product"
-                                  className={classes.link}
-                                  style={{color:"#010809" ,
-                                      marginLeft:"15px" ,
-                                      textDecoration: "none"}}
-                            >Product</Link>
+                            <Link href="/product" className={classes.nav_link}  style={{fontSize : '25px'}}>
+                                PRODUCT
+                            </Link>
                         </Box>
                     </div>
-                    <div className={classes.navLinks}>
+                    <div className={classes.sub_containers}>
                         <Box>
-                            <Link href="/cart"
-                                  className={classes.link}
-                                  style={{color:"#010809"
-                                      ,marginLeft:"15px" ,
-                                      textDecoration: "none"}}
-                            >Cart</Link>
+                            <Link href="/cart" className={classes.nav_link}  style={{fontSize : '25px'}}>
+                                CART
+                            </Link>
                         </Box>
                     </div>
-                    <Tabs value={1} sx={{margin: 'auto', mr: 1, display: 'flex', alignItems: "center"}}>
+                    <div className={classes.sub_containers}>
                         <Typography
+                            className={classes.nav_userName}
+                            style={{fontSize : '25px'}}
                             variant="h6"
-                            noWrap
-                            component="a"
-                            sx={{
-                                mr: 1,
-                                display: {xs: 'none', md: 'flex'},
-                                fontWeight: 700,
-                                color: 'white',
-                                textDecoration: 'none',
-                                fontSize: '25px',
-                                marginRight: '10px',
-                            }}
-                        >{this.props.username}
+                        >
+                            {this.props.username}
                         </Typography>
-                        <Link href="/" style={{textDecoration: 'none'}}>
-                            <Button style={{
-                                textTransform: 'none',
-                                color: 'red',
-                                marginLeft: '5px',
-                                fontSize: 'medium'
-                            }}>Logout</Button>
-                        </Link>
-                    </Tabs>
+                    </div>
                 </Toolbar>
             </AppBar>
         )
