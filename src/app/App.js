@@ -5,6 +5,7 @@ import {BrowserRouter as Router,} from "react-router-dom";
 import Login from "../pages/Login";
 import SignIn from "../pages/SignIn"
 import Product from "../pages/Product";
+import Cart from "../pages/Cart";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Login/>} />
             <Route path="signIn" element={<SignIn/>} />
               <Route path="product" element={<Product/>} />
+              <Route path="cart" element={<Cart/>} />
           </Routes>
         </div>
       </Router>
