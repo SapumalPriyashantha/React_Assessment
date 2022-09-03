@@ -13,6 +13,7 @@ class ProductService {
         })
         return await promise;
     }
+
     saveProduct = async (form) => {
         const promise = new Promise((resolve, reject) => {
             axios.post('products',form)
@@ -25,6 +26,7 @@ class ProductService {
         })
         return await promise;
     }
+
     getAllProducts = async () => {
         const promise = new Promise((resolve, reject) => {
             axios.get('products')

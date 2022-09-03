@@ -23,7 +23,7 @@ class NavBar extends Component{
                 <Toolbar>
                     <div className={classes.logo}>
                         <Box>
-                            <Link href="/homepage" style={{color:"white" ,
+                            <Link href="/home" style={{color:"white" ,
                                 marginLeft:"15px" ,
                                 textDecoration: "none" ,
                                 fontSize: "30px"}}

@@ -80,7 +80,7 @@ class Login extends Component {
                                             message: 'User credential matching success!',
                                             severity: 'success'
                                         })
-                                        alert("home page loading")
+                                        window.open("home", "_self")
                                     }else {
                                         this.setState({
                                             open: true,
